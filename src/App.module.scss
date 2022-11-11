@@ -1,0 +1,59 @@
+/* Font DM Sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+/* Font Syne */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap');
+
+/* Color */
+$red-color: #eb4b4d;
+$purple-color: #c2679e;
+$green-color: #199f84;
+$text-color: #515361;
+$white-color: #ffffff;
+$black-color: #000000;
+$dark-color: #2a2c37;
+$bg-color: #f5f7fa;
+
+/* Font */
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Syne', sans-serif;
+
+/* Breakpoint */
+$mobile-breakpoint: 576px;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+a {
+	display: inline-block;
+	color: $dark-color;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+html {
+	font-family: $primary-font;
+	font-size: 14px;
+	background-color: $bg-color;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	max-width: 1440px;
+	width: 100%;
+}

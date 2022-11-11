@@ -1,0 +1,15 @@
+@import '../../../App.module.scss';
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 20px 24px;
+	position: relative;
+
+	&__navbar {
+		display: flex;
+		align-items: center;
+	}
+}

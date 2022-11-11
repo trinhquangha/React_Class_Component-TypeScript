@@ -1,0 +1,73 @@
+@import '../../../App.module.scss';
+
+.card {
+	display: flex;
+	justify-content: center;
+	padding: 24px;
+	width: 100%;
+
+	@media only screen and (max-width: $mobile-breakpoint) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	&__content {
+		min-width: 300px;
+		display: flex;
+		align-items: center;
+
+		@media only screen and (max-width: $mobile-breakpoint) {
+			margin-top: 40px;
+			text-align: center;
+		}
+	}
+
+	&__arrow {
+		@media only screen and (max-width: $mobile-breakpoint) {
+			display: none;
+		}
+	}
+
+	&__subtitle {
+		font-family: $secondary-font;
+		font-weight: 700;
+		background-image: linear-gradient(
+			80deg,
+			$red-color,
+			$purple-color 40%,
+			$green-color 30%
+		);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	&__title {
+		font-family: $secondary-font;
+		font-size: 42px;
+		font-weight: 700;
+		margin: 16px 0;
+
+		@media only screen and (max-width: $mobile-breakpoint) {
+			font-size: 36px;
+		}
+	}
+
+	&__description {
+		color: $text-color;
+		line-height: 1.6;
+		margin-bottom: 40px;
+	}
+
+	&__image {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		min-width: 540px;
+
+		@media only screen and (max-width: $mobile-breakpoint) {
+			align-self: flex-end;
+			flex: 0 0 auto;
+			min-width: 0;
+		}
+	}
+}

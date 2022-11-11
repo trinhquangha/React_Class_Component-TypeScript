@@ -1,0 +1,17 @@
+@import '../../../../App.module.scss';
+
+.navbar {
+	&__list {
+		display: flex;
+		align-items: center;
+
+		@media only screen and (max-width: $mobile-breakpoint) {
+			display: none;
+		}
+	}
+
+	&__link {
+		padding: 8px 4px;
+		margin: 0 20px;
+	}
+}

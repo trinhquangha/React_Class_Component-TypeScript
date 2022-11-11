@@ -1,0 +1,39 @@
+@import '../../../../App.module.scss';
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-right: 24px;
+
+	&__img {
+		position: relative;
+		height: 45px;
+		width: 45px;
+	}
+
+	&__square {
+		width: 30px;
+		height: 30px;
+		background-color: $white-color;
+		border: 1px solid #e0e2e7;
+		border-radius: 4px;
+		opacity: 0.5;
+
+		&--red {
+			position: absolute;
+			left: 33.3%;
+			top: 33.3%;
+			z-index: -1;
+			background-color: $red-color;
+			border: none;
+			opacity: 1;
+		}
+	}
+
+	&__name {
+		font-family: $secondary-font;
+		font-weight: 700;
+		font-size: 24px;
+		margin-left: 12px;
+	}
+}

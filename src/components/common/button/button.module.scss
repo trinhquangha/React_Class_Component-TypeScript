@@ -1,0 +1,67 @@
+@import '../../../App.module.scss';
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 18px 36px;
+	border-radius: 10px;
+	min-width: 120px;
+	outline: 0;
+	border: 0;
+
+	cursor: pointer;
+
+	&--large {
+		width: 100%;
+		padding: 12px 0;
+		font-size: 16px;
+		font-weight: 600;
+		border-radius: 8px;
+	}
+
+	&--small {
+		border: 1px solid $dark-color;
+		padding: 12px 20px;
+
+		&:hover {
+			background-color: $dark-color;
+			color: $white-color;
+			transition: color 200ms ease, background-color 200ms ease;
+		}
+
+		@media only screen and (max-width: $mobile-breakpoint) {
+			margin-right: 50px;
+		}
+	}
+
+	&--normal {
+		background-color: $dark-color;
+		color: $white-color;
+
+		@media only screen and (max-width: $mobile-breakpoint) {
+			width: 100%;
+		}
+	}
+
+	&--primary {
+		background-image: linear-gradient(to right, #fb578e 10%, #fda38f);
+		color: white;
+	}
+
+	&--secondary {
+		color: $text-color;
+		background-color: initial;
+	}
+
+	&--facebook {
+		background-color: #eaeef4;
+		color: #3c5997;
+	}
+
+	&__left-icon {
+		display: flex;
+		width: 18px;
+		margin-right: 10px;
+	}
+}

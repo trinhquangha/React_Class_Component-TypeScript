@@ -1,0 +1,25 @@
+@import '../../../App.module.scss';
+
+.partner {
+	background-color: #eef1f5;
+	width: 100vw;
+	padding: 30px 0;
+
+	&__list {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+
+		@media only screen and (max-width: $mobile-breakpoint) {
+			flex-direction: column;
+		}
+	}
+
+	&__item {
+		img {
+			height: 30px;
+			margin: 6px 12px;
+		}
+	}
+}
